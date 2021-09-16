@@ -7,12 +7,13 @@ class Header extends Component{
 
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">Covid Status</Navbar.Brand>
+            <Navbar.Brand ><Link  className="nav-link text-white " to="/covid">Covid Status</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
+              <Link className="nav-link" to="/world">World</Link>
+
                 <Link className="nav-link" to="/india">India</Link> {/*classname nav link to change color to white */}
-                <Link className="nav-link" to="/world">World</Link>
                 
               </Nav>
               

@@ -4,6 +4,7 @@ import React , {Component, component} from 'react';
 import Header from './myComponents/Header';
 import India from './myComponents/India';
 import World from './myComponents/World';
+import Covid from './myComponents/Covid';
 import {Button} from 'react-bootstrap';
 import{
   BrowserRouter as Router,
@@ -24,9 +25,9 @@ class App extends Component{
          <Router>
            <Header/>
            <Switch>
-              <Route exact path="/">
+              <Route exact path="/covid">
 
-                  <India/>
+                  <Covid/>
                   </Route>
                <Route path="/india">
                   <India/>
